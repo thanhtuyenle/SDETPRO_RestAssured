@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class SimpleTest {
+public class GETMethod {
     public static void main(String[] args) {
         String baseUrl = "https://jsonplaceholder.typicode.com";
 
