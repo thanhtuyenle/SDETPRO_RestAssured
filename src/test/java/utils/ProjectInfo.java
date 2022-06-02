@@ -48,10 +48,7 @@ public class ProjectInfo implements RequestCapability {
 
         String email = System.getenv("email");
         String apiToken = System.getenv("token");
-        String credential = email.concat(":").concat(apiToken);
-
-        byte[] encodeCredential = Base64.encodeBase64(credential.getBytes());
-        String encodeCredStr = new String(encodeCredential);
+        String encodeCredStr = AuthenticationHandler.encodeCredStr(email, apiToken);
 
         RequestSpecification request = given();
         request.baseUri(baseUri);

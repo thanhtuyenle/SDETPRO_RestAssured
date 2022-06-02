@@ -1,6 +1,11 @@
 {
-  "userId": 1,
-  "id": 1,
-  "title": "This is request's title",
-  "body": "This is request's body"
+  "fields": {
+    "summary": "Summary | From Jira API",
+    "project": {
+      "key": "SRAT"
+    },
+    "issuetype": {
+      "id": "10008"
+    }
+  }
 }
